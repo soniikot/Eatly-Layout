@@ -1,6 +1,24 @@
 import {defineConfig} from 'vite';
 import embedTemplates from './plugins/vite-template-plugin.js';
 import path from 'path';
+import fs from 'fs';
+
+function getHtmlInputs ( dir ) {
+  const entries = fs.readdirSync( dir, {withFileTypes: true} );
+  let htmlFiles = {};
+
+  for ( const entry of entries ) {
+    const entryPath = path.join( dir, entry.name );
+    if ( entry.isDirectory() ) {
+      htmlFiles = {...htmlFiles, ...getHtmlInputs( entryPath )};
+    } else if ( entry.isFile() && entry.name.endsWith( '.html' ) ) {
+      const name = path.relative( __dirname, entryPath ).replace( /\\/g, '/' );
+      htmlFiles[name] = entryPath;
+    }
+  }
+
+  return htmlFiles;
+}
 
 export default defineConfig( {
   plugins: [embedTemplates()],
@@ -8,6 +26,10 @@ export default defineConfig( {
   build: {
     outDir: 'build',
     rollupOptions: {
+      input: {
+        ...getHtmlInputs( path.resolve( __dirname, 'src/pages/' ) ),
+        main: path.resolve( __dirname, 'index.html' )
+      },
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
