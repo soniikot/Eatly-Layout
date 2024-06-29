@@ -10,9 +10,11 @@ function getHtmlInputs ( dir ) {
   for ( const entry of entries ) {
     const entryPath = path.join( dir, entry.name );
     if ( entry.isDirectory() ) {
-      htmlFiles = {...htmlFiles, ...getHtmlInputs( entryPath )};
+      const nestedHtmlFiles = getHtmlInputs( entryPath );
+      htmlFiles = {...htmlFiles, ...nestedHtmlFiles};
     } else if ( entry.isFile() && entry.name.endsWith( '.html' ) ) {
-      const name = path.relative( __dirname, entryPath ).replace( /\\/g, '/' );
+      const relativePath = path.relative( 'src/pages', entryPath );
+      const name = relativePath.replace( /\\/g, '/' ); // Keep the full relative path with .html extension
       htmlFiles[name] = entryPath;
     }
   }
@@ -20,23 +22,44 @@ function getHtmlInputs ( dir ) {
   return htmlFiles;
 }
 
+function moveAndCleanupHtmlFiles () {
+  const buildDir = path.resolve( __dirname, 'build' );
+  const srcPagesBuildDir = path.join( buildDir, 'src/pages' );
+  const htmlFiles = fs.readdirSync( srcPagesBuildDir, {withFileTypes: true} )
+    .filter( file => file.isFile() && file.name.endsWith( '.html' ) )
+    .map( file => path.join( srcPagesBuildDir, file.name ) );
+
+  htmlFiles.forEach( file => {
+    const destination = path.join( buildDir, path.basename( file ) );
+    fs.renameSync( file, destination );
+  } );
+
+  fs.rmSync( path.join( buildDir, 'src' ), {recursive: true} );
+}
+
 export default defineConfig( {
-  plugins: [embedTemplates()],
+  plugins: [
+    embedTemplates(),
+    {
+      name: 'move-html-files',
+      closeBundle () {
+        moveAndCleanupHtmlFiles();
+      }
+    }
+  ],
   publicDir: 'src/public',
   build: {
     outDir: 'build',
     rollupOptions: {
       input: {
-        ...getHtmlInputs( path.resolve( __dirname, 'src/pages/' ) ),
-        main: path.resolve( __dirname, 'index.html' )
+        main: path.resolve( __dirname, 'index.html' ),
+        ...getHtmlInputs( path.resolve( __dirname, 'src/pages' ) ),
       },
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
         assetFileNames: ( assetInfo ) => {
-          if ( assetInfo.name.endsWith( '.html' ) ) {
-            return '[name].[ext]';
-          } else if ( assetInfo.name.endsWith( '.css' ) ) {
+          if ( assetInfo.name.endsWith( '.css' ) ) {
             return 'styles/[name].[ext]';
           } else if ( assetInfo.name.endsWith( '.js' ) ) {
             return '[name].js';
