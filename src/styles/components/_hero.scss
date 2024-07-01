@@ -1,4 +1,70 @@
-.hero {
+.hero__container {
   display: flex;
   flex-direction: row;
+  flex: 1 1 49%;
+  padding: 120px 0px 120px;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.hero__subtitle {
+  color: $light-grey;
+  font-size: 15px;
+  padding-left: 60px;
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.hero__subtitle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0%;
+  width: 54px;
+  height: 2px;
+  background-color: rgba(32, 31, 31, 0.2);
+}
+
+.hero__title {
+  letter-spacing: -3px;
+  font-size: 60px;
+}
+
+.hero_image {
+  max-width: 40%;
+  margin-right: 9.5%;
+}
+
+.hero__span {
+  color: $brand-color;
+}
+
+.hero__button--white {
+  border: 1px solid $brand-color;
+}
+
+.hero__paragraph {
+  color: $mid-grey;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0 0 55px 0;
+}
+
+.hero__buttons {
+  margin: 0 0 33px 0;
+}
+
+.hero__raiting {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: PJ;
+  font-size: 16px;
+  color: rgba(51, 65, 85, 1);
+  font-weight: 500;
 }

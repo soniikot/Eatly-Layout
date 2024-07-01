@@ -1,3 +1,37 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.modal__form-button,
+.sale__btn,
+.mobile__button,
+.hero__button,
+.button--purple {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #f9f9f9;
+  background-color: #6c5fbc;
+  border: 1px solid transparent;
+  transition: all 0.3s linear;
+  border-radius: 18px;
+  padding: 18px 27px;
+}
+.modal__form-button:hover,
+.sale__btn:hover,
+.mobile__button:hover,
+.hero__button:hover,
+.header__button--signup:hover {
+  color: #6c5fbc;
+  border-color: #6c5fbc;
+  background-color: #ffffff;
+}
+
+.button--white {
+  border-radius: 18px;
+  padding: 18px 27px;
+  color: #606060;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+}
