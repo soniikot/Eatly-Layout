@@ -3,6 +3,8 @@
 // -----------------------------------------------------------------------------
 
 .header {
+  display: block;
+  width: 100%;
   &__body {
     display: flex;
     justify-content: space-between;
@@ -29,5 +31,28 @@
 
   &__menu-item {
     margin-right: 30px;
+  }
+  &__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 424px) {
+  .header {
+    &__body {
+      padding: 15px 0;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__form {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
   }
 }

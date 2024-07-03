@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   padding: 100px 0px 100px;
-  justify-content: space-between;
 }
 
 .hero__subtitle {
@@ -10,9 +9,7 @@
   font-family: $header-font-stack;
   font-size: 15px;
   padding-left: 60px;
-  display: inline-block;
   position: relative;
-  font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 15px;
 }
@@ -55,8 +52,23 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: PJ;
+
   font-size: 16px;
   color: rgba(51, 65, 85, 1);
   font-weight: 500;
+}
+
+@media (max-width: 424px) {
+  .header__body {
+    padding: 15px 0;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__image {
+    width: 300px;
+  }
 }
