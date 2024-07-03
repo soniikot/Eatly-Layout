@@ -3,13 +3,13 @@
  */
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font: $text-font-stack;
 }
 
 // font-weight 700
 h1,
 .h1 {
-  font-family: $text-font-stack;
+  font-family: $header-font-stack;
   font-size: 60px;
   line-height: 1.2;
   font-weight: 600;
@@ -46,7 +46,6 @@ h4,
   color: $text-color;
 }
 
-// font-weight 500
 h5,
 .h5 {
   font-family: $text-font-stack;
@@ -56,28 +55,13 @@ h5,
   color: $text-color;
 }
 
-// font-weight 400
 p,
-.p {
+ul {
   font-family: $text-font-stack;
-  font-size: 18px;
-  line-height: 1.56;
-  //font-weight: normal;
-  color: $text-color;
-}
-
-// font-weight 400
-.p--sm {
-  font-family: $text-font-stack;
-  font-size: 14px;
-  line-height: 16px;
   font-weight: normal;
   color: $text-color;
 }
 
-//span {
-// font-family: $text-font-stack;
-// font-size: 12px;
-// line-height: 14px;
-// font-weight: normal;
-// color: $text-color;
+span {
+  color: $brand-color;
+}

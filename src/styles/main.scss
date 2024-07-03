@@ -13,7 +13,8 @@
 @import "layout/header", "layout/footer";
 
 // 5. Components
-@import "components/button", "components/hero", "components/numbers";
+@import "components/button", "components/hero", "components/numbers",
+  "components/logo";
 
 // 6. Page-specific styles
 @import "pages/home";

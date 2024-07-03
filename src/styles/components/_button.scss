@@ -2,36 +2,32 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.modal__form-button,
-.sale__btn,
-.mobile__button,
-.hero__button,
+//if button-purple and button-white have the same font,
+//weight could i apply it to class button?
+
 .button--purple {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-family: $text-font-stack;
+  font-weight: 700;
   font-size: 18px;
-  color: #f9f9f9;
-  background-color: #6c5fbc;
+  color: $light-grey;
+  background-color: $brand-color;
   border: 1px solid transparent;
   transition: all 0.3s linear;
   border-radius: 18px;
   padding: 18px 27px;
 }
-.modal__form-button:hover,
-.sale__btn:hover,
-.mobile__button:hover,
-.hero__button:hover,
-.header__button--signup:hover {
+.button--purple:hover {
   color: #6c5fbc;
   border-color: #6c5fbc;
   background-color: #ffffff;
 }
 
 .button--white {
+  font-family: $text-font-stack;
   border-radius: 18px;
   padding: 18px 27px;
-  color: #606060;
+  color: $mid-grey;
   background-color: transparent;
   border: none;
-  font-weight: 600;
+  font-weight: 700;
 }

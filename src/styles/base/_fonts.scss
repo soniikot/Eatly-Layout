@@ -10,17 +10,14 @@
 
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins") url("../assets/fonts/montserrat/Poppins-Medium.ttf")
+  src: local("Poppins") url("/src/public/assets/fonts/Poppins-Medium.ttf")
     format("truetype");
-  font-style: bold;
-  font-weight: 700;
 }
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter") url("../assets/fonts/Inter.ttf") format("truetype");
-  font-style: medium;
-  font-weight: 500;
+  src: local("Inter") url("/src/public/assets/fonts/Inter.ttf")
+    format("truetype");
 }
 
 @font-face {

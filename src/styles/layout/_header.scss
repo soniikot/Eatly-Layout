@@ -2,39 +2,32 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.header__body {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border-bottom: 2px solid #cbcbcb;
-}
+.header {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid $border-color;
+  }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo span {
-  font-family: poppins-medium;
-  color: rgba(108, 95, 188, 1);
-  font-size: 21px;
-  font-weight: 600;
-  margin-left: 5px;
-}
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+  }
 
-.menu {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-  color: rgba(96, 96, 96, 1);
-}
-nav {
-  flex: 1 1 auto;
-}
+  &__menu-link {
+    color: $dark-grey;
+    font-weight: 500;
+    font-size: 18px;
+  }
 
-.menu__item {
-  margin-right: 30px;
+  &__menu-list {
+    display: flex;
+  }
+
+  &__menu-item {
+    margin-right: 30px;
+  }
 }
