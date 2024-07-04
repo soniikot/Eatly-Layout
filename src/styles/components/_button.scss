@@ -4,43 +4,36 @@
 
 //if button-purple and button-white have the same font,
 //weight could i apply it to class button?
-
-.button--purple {
-  font-family: $text-font-stack;
-  font-weight: 700;
-  font-size: 18px;
-  color: $light-grey;
-  background-color: $brand-color;
-  border: 1px solid transparent;
-  transition: all 0.3s linear;
+.button {
   border-radius: 18px;
   padding: 18px 27px;
-}
-.button--purple:hover {
-  color: #6c5fbc;
-  border-color: #6c5fbc;
-  background-color: #ffffff;
-}
 
-.button--login {
-  font-family: $text-font-stack;
-  border-radius: 18px;
-  padding: 18px 27px;
-  color: $mid-grey;
-  background-color: transparent;
-  border: none;
-  font-weight: 700;
-}
+  &--purple {
+    color: $light-grey;
+    background-color: $brand-color;
+    border: 1px solid transparent;
+    transition: all 0.3s linear;
+  }
+  &--purple:hover {
+    color: #6c5fbc;
+    border-color: #6c5fbc;
+    background-color: #ffffff;
+  }
 
-.button--white {
-  font-family: $text-font-stack;
-  font-weight: 700;
-  font-size: 18px;
-  color: $brand-color;
-  background-color: white;
-  border: 1px solid $brand-color;
-  transition: all 0.3s linear;
-  border-radius: 18px;
-  padding: 18px 27px;
-  margin-left: 20px;
+  &__text {
+    font-family: $text-font-stack;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &--login {
+    color: $mid-grey;
+    background-color: transparent;
+    border: none;
+  }
+  &--white {
+    color: $brand-color;
+    background-color: white;
+    border: 1px solid $brand-color;
+    transition: all 0.3s linear;
+  }
 }

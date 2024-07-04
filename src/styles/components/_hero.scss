@@ -1,74 +1,68 @@
-.hero__container {
-  display: flex;
-  flex-direction: row;
-  padding: 100px 0px 100px;
-}
-
-.hero__subtitle {
-  color: $subtitle-grey;
-  font-family: $header-font-stack;
-  font-size: 15px;
-  padding-left: 60px;
-  position: relative;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
-
-.hero__subtitle::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0%;
-  width: 54px;
-  height: 2px;
-  background-color: rgba(32, 31, 31, 0.2);
-}
-
-.hero__title {
-  letter-spacing: -3px;
-  margin-bottom: 15px;
-}
-
-.hero_image {
-  max-width: 40%;
-  margin-right: 9.5%;
-}
-
-.hero__paragraph {
-  color: $mid-grey;
-  font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 55px;
-  line-height: 1.5;
-}
-
-.hero__buttons {
-  margin-bottom: 33px;
-}
-
-.hero__raiting {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  font-size: 16px;
-  color: rgba(51, 65, 85, 1);
-  font-weight: 500;
-}
-
-@media (max-width: 424px) {
-  .header__body {
-    padding: 15px 0;
+.hero {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0px 100px;
+    @include media("small") {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
-  .hero__container {
-    flex-direction: column;
-    text-align: center;
+  &__header {
+    flex: 1 1 50%;
   }
 
-  .hero__image {
-    width: 300px;
+  &__subtitle {
+    color: $subtitle-grey;
+    font-family: $header-font-stack;
+    font-size: 15px;
+    padding-left: 60px;
+    position: relative;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    width: 54px;
+    height: 2px;
+    background-color: rgba(32, 31, 31, 0.2);
+  }
+
+  &__title {
+    letter-spacing: -3px;
+    margin-bottom: 15px;
+  }
+
+  &__image {
+    margin-right: 9.5%;
+  }
+
+  &__text {
+    color: $mid-grey;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 55px;
+    line-height: 1.5;
+  }
+
+  &__buttons {
+    margin-bottom: 33px;
+  }
+
+  &__raiting {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 16px;
+    color: rgba(51, 65, 85, 1);
+    font-weight: 500;
   }
 }

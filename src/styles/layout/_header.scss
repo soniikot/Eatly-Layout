@@ -12,11 +12,18 @@
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 2px solid $border-color;
+
+    @include media("small") {
+      padding: 15px 0;
+    }
   }
 
   &__menu {
     display: flex;
     flex-grow: 1;
+    @include media("small") {
+      display: none;
+    }
   }
 
   &__menu-link {
@@ -32,26 +39,15 @@
   &__menu-item {
     margin-right: 30px;
   }
+
+  &__form {
+    @include media("small") {
+      display: none;
+    }
+  }
   &__burger {
     display: none;
-  }
-}
-
-@media (max-width: 424px) {
-  .header {
-    &__body {
-      padding: 15px 0;
-    }
-
-    &__menu {
-      display: none;
-    }
-
-    &__form {
-      display: none;
-    }
-
-    &__burger {
+    @include media("small") {
       display: block;
     }
   }

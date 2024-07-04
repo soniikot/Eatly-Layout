@@ -6,7 +6,11 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">%{header}% %{main}% %{footer}%</div>
+    <div id="app">
+      %{header}%
+      <div class="main">%{hero}% %{numbers}%</div>
+      %{footer}%
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
