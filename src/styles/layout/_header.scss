@@ -1,10 +1,8 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-
 .header {
   display: block;
   width: 100%;
+  position: fixed;
+
   &__body {
     display: flex;
     justify-content: space-between;
@@ -18,37 +16,104 @@
     }
   }
 
-  &__menu {
-    display: flex;
-    flex-grow: 1;
+  &__form {
+    @include media("medium") {
+      margin-right: 50px;
+    }
     @include media("small") {
       display: none;
     }
+  }
+
+  &__menu {
+    display: flex;
   }
 
   &__menu-link {
     color: $dark-grey;
     font-weight: 500;
     font-size: 18px;
+    text-decoration: none;
+    margin-right: 30px;
   }
 
   &__menu-list {
     display: flex;
-  }
+    list-style: none;
 
-  &__menu-item {
-    margin-right: 30px;
-  }
-
-  &__form {
-    @include media("small") {
+    @include media("medium") {
       display: none;
+      flex-direction: column;
+      width: 300px;
+      position: fixed;
+      height: 100%;
+
+      background-color: $light-grey;
+    }
+
+    @include media("medium") {
+      display: none;
+      flex-direction: column;
+      width: 300px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      z-index: 10;
+
+      background-color: $light-grey;
     }
   }
+  &__menu-item {
+    margin-left: 20px;
+
+    @include media("medium") {
+      margin: 10px 0;
+    }
+  }
+
   &__burger {
     display: none;
-    @include media("small") {
-      display: block;
+
+    &:checked + .header__burger__icon + .header__menu-list {
+      display: flex;
+
+      @include media("small") {
+        display: block;
+        margin-right: 0;
+      }
+      @include media("medium") {
+        padding-top: 0px;
+        display: block;
+        cursor: pointer;
+      }
     }
+  }
+
+  &__burger__icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    z-index: 100;
+
+    @include media("small") {
+      display: flex;
+    }
+
+    @include media("medium") {
+      display: flex;
+    }
+  }
+  &__burger__span {
+    width: 30px;
+    height: 3px;
+    background-color: $dark-grey;
+    transition: all 0.3s;
   }
 }

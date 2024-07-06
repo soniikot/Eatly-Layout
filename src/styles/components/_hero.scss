@@ -2,7 +2,7 @@
   &__container {
     display: flex;
     flex-direction: row;
-    padding: 100px 0px 100px;
+    padding: 200px 0px 100px;
     @include media("small") {
       flex-direction: column;
       text-align: center;
