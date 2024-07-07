@@ -1,8 +1,7 @@
 .hero {
   &__container {
     display: flex;
-    flex: 1 0 50%;
-    flex-direction: row;
+    flex: 1 1 50%;
     padding: 200px 0px 100px;
     @include media("medium") {
       flex-direction: column;
@@ -10,7 +9,11 @@
     }
   }
 
+  &__header {
+    margin-bottom: 100px;
+  }
   &__subtitle {
+    display: inline-block;
     color: $subtitle-grey;
     font-family: $header-font-stack;
     font-size: 15px;
@@ -18,6 +21,7 @@
     position: relative;
     letter-spacing: 2px;
     margin-bottom: 15px;
+    z-index: -10;
   }
 
   &__subtitle::before {
@@ -25,7 +29,6 @@
     display: block;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 0%;
     width: 54px;
     height: 2px;
@@ -62,23 +65,21 @@
     color: rgba(51, 65, 85, 1);
     font-weight: 500;
   }
-  &__image__plate {
+  &__image {
     position: relative;
+    max-width: 40%;
+    z-index: -10;
   }
-  /*&__image__plate::before {
-    content: "";
-    position: absolute;
-    top: -3%;
-    left: 5%;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    z-index: -1;
-    background-color: #6c5fbc;
-  }*/
   &__image__graph {
     position: relative;
-    top: -150px;
-    right: 12s0px;
+    top: -220px;
+    right: 0px;
+  }
+
+  &__order {
+    position: absolute;
+    bottom: 93%;
+    left: 50%;
+    width: 70%;
   }
 }

@@ -9,6 +9,7 @@
   padding: 18px 27px;
 
   &--purple {
+    flex-grow: 0;
     color: $light-grey;
     background-color: $brand-color;
     border: 1px solid transparent;
