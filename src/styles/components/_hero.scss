@@ -1,10 +1,12 @@
 .hero {
   &__container {
     display: flex;
-    flex: 1 1 50%;
+
     padding: 200px 0px 100px;
+
     @include media("medium") {
       flex-direction: column;
+
       text-align: center;
     }
   }
@@ -60,15 +62,20 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
     font-size: 16px;
     color: rgba(51, 65, 85, 1);
     font-weight: 500;
+    @include media("medium") {
+      justify-content: center;
+    }
   }
   &__image {
     position: relative;
     max-width: 40%;
     z-index: -10;
+    @include media("medium") {
+      max-width: 100%;
+    }
   }
   &__image__graph {
     position: relative;
@@ -79,7 +86,6 @@
   &__order {
     position: absolute;
     bottom: 93%;
-    left: 50%;
-    width: 70%;
+    left: 65%;
   }
 }
