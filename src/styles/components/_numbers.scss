@@ -1,3 +1,35 @@
 .numbers {
   background-color: $brand-color;
+  &__wrapper {
+    display: flex;
+    flex-grow: 1;
+    color: $white;
+    padding: 55px 0;
+    justify-content: center;
+    @include media("medium") {
+      flex-direction: column;
+    }
+  }
+
+  &__header {
+    font-size: 43px;
+    margin: 10px;
+  }
+
+  &__text {
+    margin: 25px;
+    border-left: 1px solid $white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    @include media("medium") {
+      border-bottom: 1px solid $white;
+      border-left: none;
+    }
+  }
+  &__para {
+    color: $light-brand-color;
+    font-size: 15px;
+    font-family: $header-font-stack;
+  }
 }

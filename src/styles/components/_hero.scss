@@ -1,9 +1,7 @@
 .hero {
   &__container {
     display: flex;
-
-    padding: 200px 0px 100px;
-
+    padding: 200px 0px 0px;
     @include media("medium") {
       flex-direction: column;
 
