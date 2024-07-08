@@ -19,7 +19,7 @@
 
   &__form {
     display: flex;
-    flex-shrink: 0;
+
     @include media("medium") {
       margin-right: 50px;
     }
@@ -78,7 +78,7 @@
   &__burger {
     display: none;
 
-    &:checked + .header__burger__icon + .header__menu-list {
+    &:checked + .header__burger-icon + .header__menu-list {
       @include media("medium") {
         display: block;
         cursor: pointer;
@@ -86,7 +86,7 @@
     }
   }
 
-  &__burger__icon {
+  &__burger-icon {
     display: none;
     flex-direction: column;
     justify-content: space-around;
@@ -98,15 +98,12 @@
     right: 15px;
     z-index: 100;
 
-    @include media("small") {
-      display: flex;
-    }
-
     @include media("medium") {
       display: flex;
     }
   }
-  &__burger__span {
+
+  &__burger-span {
     width: 30px;
     height: 3px;
     background-color: $dark-grey;

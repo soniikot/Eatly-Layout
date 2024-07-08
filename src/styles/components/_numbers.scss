@@ -2,7 +2,7 @@
   background-color: $brand-color;
   &__wrapper {
     display: flex;
-    flex-grow: 1;
+    // flex-grow: 1;
     color: $white;
     padding: 55px 0;
     justify-content: center;
@@ -27,7 +27,7 @@
       border-left: none;
     }
   }
-  &__para {
+  &__paragraph {
     color: $light-brand-color;
     font-size: 15px;
     font-family: $header-font-stack;

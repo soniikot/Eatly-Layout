@@ -1,7 +1,7 @@
 .hero {
   &__container {
     display: flex;
-    padding: 200px 0px 0px;
+    padding: 200px 0px 100px;
 
     @include media("medium") {
       flex-direction: column;
@@ -11,10 +11,12 @@
   }
 
   &__header {
+    flex: 1 1 49%;
     @include media("medium") {
       margin-bottom: 100px;
     }
   }
+
   &__subtitle {
     display: inline-block;
     color: $subtitle-grey;
@@ -60,33 +62,45 @@
     align-items: center;
     gap: 20px;
     font-size: 16px;
-    color: rgba(51, 65, 85, 1);
+    color: rgba(51, 65, 85, 1); // variable
     font-weight: 500;
     @include media("medium") {
       justify-content: center;
     }
   }
+
   &__image {
-    margin-right: 9.5%;
     position: relative;
+    max-width: 40%;
+    margin-right: 9.5%;
     z-index: -10;
     @include media("medium") {
       max-width: 100%;
+      margin-right: 0;
     }
   }
 
-  &__image__plate {
-    max-width: 100%;
-  }
-  &__image__graph {
+  &__image-wrapper {
     position: relative;
-    top: -220px;
-    right: 0px;
+    z-index: -10;
+  }
+
+  &__image-plate {
+    max-width: 100%;
+    vertical-align: top;
+  }
+
+  &__image-graph {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    max-width: 50%;
   }
 
   &__order {
     position: absolute;
-    bottom: 93%;
-    left: 65%;
+    bottom: 90%;
+    left: 40%;
+    width: 73%;
   }
 }
