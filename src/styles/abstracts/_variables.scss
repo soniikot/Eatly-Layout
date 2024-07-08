@@ -4,7 +4,10 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: "Poppins", "Open Sans", "Helvetica Neue Light",
+$text-font-stack: "Inter", "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif !default;
+
+$header-font-stack: "Poppins", "Open Sans", "Helvetica Neue Light",
   "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 
 /// Code (monospace) font family
@@ -12,17 +15,23 @@ $text-font-stack: "Poppins", "Open Sans", "Helvetica Neue Light",
 $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
   "Monaco", monospace !default;
 
-/// Copy text color
 /// @type Color
 $text-color: rgb(34, 34, 34) !default;
 
-/// Main brand color
 /// @type Color
 $brand-color: rgb(108, 95, 188) !default;
 
+/// @type Color
+$light-brand-color: rgb(197, 191, 237) !default;
+
+/// @type Color
+$white: rgb(255, 255, 255) !default;
+
 /// Light grey
 /// @type Color
-$light-grey: rgba(32, 31, 31, 0.2) !default;
+$light-grey: rgb(249, 249, 249) !default;
+
+$subtitle-grey: rgba(32, 31, 31, 0.2);
 
 /// Medium grey
 /// @type Color
@@ -30,7 +39,11 @@ $mid-grey: rgb(103, 103, 103) !default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$dark-grey: rgb(48, 1, 1) !default;
+
+/// Dark grey
+/// @type Color
+$border-color: rgb(203, 203, 203) !default;
 
 /// Container's maximum width
 /// @type Length
@@ -40,7 +53,7 @@ $max-width: 1280px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  "small": 320px,
+  "small": 424px,
   "medium": 768px,
   "large": 1024px,
 ) !default;

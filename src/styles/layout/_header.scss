@@ -1,40 +1,112 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: $white;
 
-.header__body {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border-bottom: 2px solid #cbcbcb;
-}
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid $border-color;
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo span {
-  font-family: poppins-medium;
-  color: rgba(108, 95, 188, 1);
-  font-size: 21px;
-  font-weight: 600;
-  margin-left: 5px;
-}
+    @include media("small") {
+      padding: 15px 0;
+    }
+  }
 
-.menu {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-  color: rgba(96, 96, 96, 1);
-}
-nav {
-  flex: 1 1 auto;
-}
+  &__form {
+    display: flex;
 
-.menu__item {
-  margin-right: 30px;
+    @include media("medium") {
+      margin-right: 50px;
+    }
+    @include media("small") {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-link {
+    color: $dark-grey;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 30px;
+  }
+
+  &__menu-list {
+    display: flex;
+    list-style: none;
+
+    @include media("medium") {
+      display: none;
+      flex-direction: column;
+      width: 300px;
+      position: fixed;
+      height: 100%;
+
+      background-color: $light-grey;
+    }
+
+    @include media("medium") {
+      display: none;
+      flex-direction: column;
+      width: 300px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      z-index: 1;
+
+      background-color: $light-grey;
+    }
+  }
+  &__menu-item {
+    margin-left: 20px;
+
+    @include media("medium") {
+      margin: 10px 0;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    &:checked + .header__burger-icon + .header__menu-list {
+      @include media("medium") {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__burger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    z-index: 100;
+
+    @include media("medium") {
+      display: flex;
+    }
+  }
+
+  &__burger-span {
+    width: 30px;
+    height: 3px;
+    background-color: $dark-grey;
+    transition: all 0.3s;
+  }
 }

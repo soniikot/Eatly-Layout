@@ -2,26 +2,24 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font-family: $text-font-stack;
 }
 
-// font-weight 700
 h1,
 .h1 {
-  font-family: $text-font-stack;
-  font-size: 60px;
+  font-family: $header-font-stack;
+  font-size: 75px;
   line-height: 1.2;
-  font-weight: 600;
-  color: $text-color;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 // font-weight 700
 h2,
 .h2 {
-  font-family: $text-font-stack;
-  font-size: 35px;
-  line-height: 40px;
+  font-family: $header-font-stack;
+  font-size: 16px;
+
   font-weight: bold;
   color: $text-color;
 }
@@ -46,7 +44,6 @@ h4,
   color: $text-color;
 }
 
-// font-weight 500
 h5,
 .h5 {
   font-family: $text-font-stack;
@@ -55,29 +52,19 @@ h5,
   font-weight: medium;
   color: $text-color;
 }
-
-// font-weight 400
-p,
-.p {
-  font-family: $text-font-stack;
+p {
+  color: $light-grey;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 1.56;
-  //font-weight: normal;
-  color: $text-color;
 }
 
-// font-weight 400
-.p--sm {
+p,
+ul {
   font-family: $text-font-stack;
-  font-size: 14px;
-  line-height: 16px;
   font-weight: normal;
   color: $text-color;
 }
 
-//span {
-// font-family: $text-font-stack;
-// font-size: 12px;
-// line-height: 14px;
-// font-weight: normal;
-// color: $text-color;
+.span {
+  color: $brand-color;
+}

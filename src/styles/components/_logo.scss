@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-family: $header-font-stack;
+    font-size: 21px;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+}

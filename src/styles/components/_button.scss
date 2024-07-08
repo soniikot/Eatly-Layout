@@ -2,36 +2,39 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.modal__form-button,
-.sale__btn,
-.mobile__button,
-.hero__button,
-.button--purple {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #f9f9f9;
-  background-color: #6c5fbc;
-  border: 1px solid transparent;
-  transition: all 0.3s linear;
+//if button-purple and button-white have the same font,
+//weight could i apply it to class button?
+.button {
   border-radius: 18px;
   padding: 18px 27px;
-}
-.modal__form-button:hover,
-.sale__btn:hover,
-.mobile__button:hover,
-.hero__button:hover,
-.header__button--signup:hover {
-  color: #6c5fbc;
-  border-color: #6c5fbc;
-  background-color: #ffffff;
-}
 
-.button--white {
-  border-radius: 18px;
-  padding: 18px 27px;
-  color: #606060;
-  background-color: transparent;
-  border: none;
-  font-weight: 600;
+  &--purple {
+    flex-grow: 0;
+    color: $light-grey;
+    background-color: $brand-color;
+    border: 1px solid transparent;
+    transition: all 0.3s linear;
+  }
+  &--purple:hover {
+    color: #6c5fbc;
+    border-color: #6c5fbc;
+    background-color: #ffffff;
+  }
+
+  &__text {
+    font-family: $text-font-stack;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &--login {
+    color: $mid-grey;
+    background-color: transparent;
+    border: none;
+  }
+  &--white {
+    color: $brand-color;
+    background-color: white;
+    border: 1px solid $brand-color;
+    transition: all 0.3s linear;
+  }
 }
