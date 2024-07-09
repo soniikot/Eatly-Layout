@@ -1,38 +1,45 @@
+* {
+  border: 1px solid black;
+}
+
 .order {
-  height: 64px;
-  width: 258px;
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 16px 25px rgba(70, 70, 70, 0.05);
   padding: 5px 15px;
-
-  &__container {
-    display: flex;
-    height: 100%;
-  }
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
 
   &__image {
     margin-right: 20px;
+    max-width: 23%;
   }
 
   &__text {
-    flex-grow: 1;
     font-family: "Poppins", sans-serif;
+    width: 100%;
   }
 
   &__name {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 15px;
-    margin: 0 0 5px;
   }
 
   &__status {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 10px;
-    margin: 0 0 5px;
   }
 
   &__time {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: right;
     font-size: 11px;
-    color: #acadb9;
+    color: $mid-grey;
   }
 }

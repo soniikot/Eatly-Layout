@@ -19,7 +19,7 @@
 
   &__form {
     display: flex;
-
+    flex-shrink: 0;
     @include media("medium") {
       margin-right: 50px;
     }
