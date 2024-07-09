@@ -1,0 +1,33 @@
+.mobile {
+  &__wrapper {
+    display: flex;
+    padding: 60px;
+    margin-left: 60px;
+
+    @include media("medium") {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__title {
+    margin-left: 40px;
+  }
+  &__text {
+    font-size: 20px;
+  }
+  &__image {
+    width: 700px;
+  }
+
+  &__button {
+    margin: 40px;
+  }
+}
+
+ul {
+  list-style: disc;
+
+  li {
+    margin-bottom: 20px;
+  }
+}
