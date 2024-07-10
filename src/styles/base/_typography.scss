@@ -21,6 +21,8 @@ h2,
   font-size: 47px;
   font-weight: bold;
   color: $text-color;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 // font-weight 700
@@ -31,6 +33,8 @@ h3,
   line-height: 32px;
   font-weight: bold;
   color: $text-color;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 // font-weight 500

@@ -1,0 +1,23 @@
+* {
+  border: 1px solid red;
+}
+.restaurants {
+  &__title {
+    text-align: center;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  &__details {
+    display: flex;
+  }
+}
+
+.card {
+  &__details {
+    display: flex;
+  }
+}
