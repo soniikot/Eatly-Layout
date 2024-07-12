@@ -2,19 +2,26 @@
   &__wrapper {
     display: flex;
     padding: 60px;
-    margin-left: 60px;
+    // margin-left: 60px;
 
     @include media("medium") {
       flex-direction: column-reverse;
+      align-items: center;
     }
+  }
+
+  &__header{
+    flex: 0 1 50%;
   }
 
   &__title {
     margin-left: 40px;
   }
+
   &__text {
     font-size: 20px;
   }
+
   &__list {
     list-style: disc;
   }
@@ -22,8 +29,9 @@
   &__list-item {
     margin-bottom: 20px;
   }
+
   &__image {
-    width: 700px;
+    flex-grow: 1 1 50%;
   }
 
   &__button {

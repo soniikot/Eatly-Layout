@@ -1,5 +1,6 @@
 .numbers {
   background-color: $brand-color;
+  
   &__wrapper {
     display: flex;
     // flex-grow: 1;
@@ -27,6 +28,7 @@
       border-left: none;
     }
   }
+
   &__paragraph {
     color: $light-brand-color;
     font-size: 15px;
