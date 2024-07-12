@@ -1,6 +1,3 @@
-* {
-  border: 1px solid red;
-}
 
 .restaurants {
   &__wrapper {
@@ -11,6 +8,7 @@
   &__title {
     text-align: center;
   }
+  
   &__card {
     display: flex;
     background-color: $white;
