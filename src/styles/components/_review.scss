@@ -1,0 +1,34 @@
+.review {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  &__title {
+    text-align: center;
+  }
+
+  &__card {
+    background-color: $white;
+    border: 2px solid $light-grey;
+    border-radius: 21px;
+    padding: 38px;
+  }
+
+  &__card-header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__card-paragraph {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+}
+
+.card-header {
+  &__photo {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}

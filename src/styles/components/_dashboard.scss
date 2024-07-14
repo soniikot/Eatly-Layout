@@ -1,22 +1,33 @@
 .dashboard {
   &__container {
     display: flex;
-
     justify-content: space-between;
     align-items: flex-start;
-    -moz-column-gap: 10px;
     column-gap: 10px;
+    @include media("medium") {
+      display: block;
+    }
   }
 
+  &__title {
+    @include media("medium") {
+      text-align: center;
+    }
+  }
   &__header {
     flex: 0 1 50%;
   }
   &__orders {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: 0.7fr;
     gap: 10px;
     margin-bottom: 30px;
+    @include media("medium") {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+      margin-bottom: 40px;
+    }
   }
   &__stats {
     display: flex;
@@ -31,6 +42,7 @@
 
   &__stats-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   &__stats-period {
@@ -43,6 +55,7 @@
 }
 
 .stats-card {
+  margin: 10px;
   border: 1px solid $subtitle-grey;
   border-radius: 19px;
   padding-bottom: 30px;
