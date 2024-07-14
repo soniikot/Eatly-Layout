@@ -1,0 +1,50 @@
+.dishes {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px 30px;
+    margin-bottom: 65px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+  &__card {
+    display: flex;
+    box-shadow: 7px 82px 41px rgba(229, 229, 229, 0.7);
+    border-radius: 35px;
+    padding: 17px;
+    position: relative;
+    transition: transform 0.3s ease;
+    background-color: $white;
+    flex-direction: column;
+    width: fit-content;
+    transition: all 0.5s ease;
+  }
+
+  &__card:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card {
+  &__like {
+    text-align: right;
+  }
+}
+
+.details {
+  &__price {
+    display: flex;
+  }
+}
+
+.price {
+  &__name {
+    font-size: 2px;
+  }
+  &__add {
+    flex-grow: 1;
+    text-align: right;
+  }
+}

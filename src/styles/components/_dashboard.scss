@@ -1,0 +1,82 @@
+.dashboard {
+  &__container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+  }
+
+  &__header {
+    flex: 0 1 50%;
+  }
+  &__orders {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 47%;
+    background: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 25px;
+    box-shadow: 0 20px 30px rgba(50, 49, 66, 0.2);
+    padding: 43px;
+  }
+
+  &__stats-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__stats-period {
+    font-size: 19px;
+    letter-spacing: 0.6px;
+    padding: 12px 18px;
+    background: $background-color;
+    border-radius: 13px;
+  }
+}
+
+.stats-card {
+  border: 1px solid $subtitle-grey;
+  border-radius: 19px;
+  padding-bottom: 30px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  &__header {
+    margin-left: 15px;
+    display: flex;
+  }
+
+  &__image {
+    margin-right: 10px;
+  }
+  &__progress-bar-outer {
+    margin: 0 30px;
+    background-color: $light-brand-color;
+    border-radius: 15px;
+  }
+  &__progress-bar {
+    background-color: $brand-color;
+    padding: 4px;
+    border-radius: 15px;
+    width: 80%;
+  }
+
+  &__progress-bar-outer--orange {
+    background-color: rgb(251, 192, 84);
+  }
+
+  &__progress-bar--orange {
+    background-color: orange;
+    width: 40%;
+  }
+}
