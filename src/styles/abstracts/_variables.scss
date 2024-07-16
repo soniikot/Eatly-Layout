@@ -28,19 +28,24 @@ $brand-color: rgb(108, 95, 188) !default;
 /// @type Color
 $light-brand-color: rgb(197, 191, 237) !default;
 
+$deep-orange-color: orange;
+$light-orange-color: rgb(249, 198, 104);
+
 /// @type Color
 $white: rgb(255, 255, 255) !default;
 
 /// Light grey
 /// @type Color
 $light-grey: rgba(249, 249, 249) !default;
-
-$subtitle-grey: rgba(32, 31, 31, 0.2);
+$light-grey: rgba(249, 249, 249) !default;
+$subtitle-grey: rgba(203, 203, 203, 0.2);
 
 /// Medium grey
 /// @type Color
 $mid-grey: rgb(103, 103, 103) !default;
 
+///shadow-gray
+$shadow-grey: rgba(229, 229, 229, 0.7);
 /// Dark grey
 /// @type Color
 $dark-grey: rgb(78, 77, 84) !default;

@@ -1,9 +1,11 @@
 .dashboard {
-  &__container {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     column-gap: 10px;
+    margin-bottom: 30px;
+
     @include media("medium") {
       display: block;
     }
@@ -18,11 +20,10 @@
     flex: 0 1 50%;
   }
   &__orders {
-    margin-top: 30px;
     display: grid;
     grid-template-columns: 0.7fr;
     gap: 10px;
-    margin-bottom: 30px;
+    margin: 30px;
     @include media("medium") {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 15px;
@@ -36,12 +37,13 @@
     background: #ffffff;
     border: 1px solid #edf2f7;
     border-radius: 25px;
-    box-shadow: 0 20px 30px rgba(50, 49, 66, 0.2);
+    box-shadow: 0 20px 30px $shadow-grey;
     padding: 43px;
   }
 
   &__stats-header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
@@ -52,26 +54,7 @@
     background: $background-color;
     border-radius: 13px;
   }
-}
 
-.stats-card {
-  margin: 10px;
-  border: 1px solid $subtitle-grey;
-  border-radius: 19px;
-  padding-bottom: 30px;
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-  }
-  &__header {
-    margin-left: 15px;
-    display: flex;
-  }
-
-  &__image {
-    margin-right: 10px;
-  }
   &__progress-bar-outer {
     margin: 0 30px;
     background-color: $light-brand-color;
@@ -85,11 +68,32 @@
   }
 
   &__progress-bar-outer--orange {
-    background-color: rgb(251, 192, 84);
+    background-color: $light-orange-color;
   }
 
   &__progress-bar--orange {
-    background-color: orange;
-    width: 40%;
+    background-color: $deep-orange-color;
+    width: 80%;
+  }
+
+  &__stats-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  &__stats-header {
+    margin-left: 15px;
+    display: flex;
+  }
+
+  &__stats-image {
+    margin-right: 10px;
+  }
+
+  &__stats-content {
+    margin: 10px;
+    border: 1px solid $subtitle-grey;
+    border-radius: 19px;
+    padding-bottom: 30px;
   }
 }

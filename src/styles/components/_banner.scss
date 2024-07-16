@@ -14,11 +14,13 @@
     font-weight: 900;
   }
   &__image {
-    max-width: 280px;
-
     position: absolute;
     right: 55px;
     bottom: -100px;
+    max-width: 280px;
+    @include media("medium") {
+      display: none;
+    }
   }
 
   &__input {
