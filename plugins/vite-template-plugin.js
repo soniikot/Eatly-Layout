@@ -11,25 +11,33 @@ function embedTemplates () {
         const templateFiles = fs.readdirSync(templateDir).filter(file => file.endsWith('.template.html'))
 
         let transformedHtml = html
+        let hasMoreSubstitutions = true
 
-        for (const file of templateFiles) {
-          const templatePath = path.join(templateDir, file)
-          let templateContent = fs.readFileSync(templatePath, 'utf-8')
-          const templateName = path.basename(file, '.template.html')
+        while (hasMoreSubstitutions) {
+          hasMoreSubstitutions = false
 
-          if (server) {
-            templateContent = templateContent.replace(
-              /src="\.\.\/public\/assets\/([^"]+)"/g,
-              'src="/src/public/assets/$1"'
-            )
-          } else {
-            templateContent = templateContent.replace(
-              /src="\.\.\/public\/assets\/([^"]+)"/g,
-              'src="assets/$1"'
-            )
+          for (const file of templateFiles) {
+            const templatePath = path.join(templateDir, file)
+            let templateContent = fs.readFileSync(templatePath, 'utf-8')
+            const templateName = path.basename(file, '.template.html')
+
+            if (server) {
+              templateContent = templateContent.replace(
+                /src="\.\.\/public\/assets\/([^"]+)"/g,
+                'src="/src/public/assets/$1"'
+              )
+            } else {
+              templateContent = templateContent.replace(
+                /src="\.\.\/public\/assets\/([^"]+)"/g,
+                'src="assets/$1"'
+              )
+            }
+
+            if (transformedHtml.includes(`%{${templateName}}%`)) {
+              transformedHtml = transformedHtml.replace(`%{${templateName}}%`, templateContent)
+              hasMoreSubstitutions = true
+            }
           }
-
-          transformedHtml = transformedHtml.replace(`%{${templateName}}%`, templateContent)
         }
 
         return transformedHtml
