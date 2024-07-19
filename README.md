@@ -20,8 +20,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your system.
 
 1. Clone the repository:
    ```sh
-    git clone https://github.com/your-username/eatly.git
-    cd eatly
+    git clone https://github.com/Taneros/vite-for-making-layouts
+    cd vite-for-making-layouts
 
 2. Install dependencies:
     ```sh
