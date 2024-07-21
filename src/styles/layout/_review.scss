@@ -65,13 +65,13 @@
 }
 
 .nav-buttons {
+  position: absolute;
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
 
 .nav-button {
-  margin: 0 5px;
   cursor: pointer;
   padding: 5px 50px;
   background-color: $light-brand-color;
@@ -80,5 +80,10 @@
 }
 
 .nav-button:hover {
+  background-color: $brand-color;
+}
+.slider__nav:nth-child(1):checked ~ .nav-buttons .nav-button:nth-child(1),
+.slider__nav:nth-child(2):checked ~ .nav-buttons .nav-button:nth-child(2),
+.slider__nav:nth-child(3):checked ~ .nav-buttons .nav-button:nth-child(3) {
   background-color: $brand-color;
 }
