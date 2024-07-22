@@ -2,7 +2,6 @@
   &__wrapper {
     display: flex;
     padding: 60px;
-    // margin-left: 60px;
 
     @include media("medium") {
       flex-direction: column-reverse;
@@ -10,7 +9,7 @@
     }
   }
 
-  &__header{
+  &__header {
     flex: 0 1 50%;
   }
 
