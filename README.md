@@ -1,4 +1,6 @@
+
 # Vite.js setup for creating layouts using 
+ 
 
 the 7-1 architecture pattern and sticking to Sass Guidelines writing conventions.
 
@@ -64,3 +66,11 @@ vendors/: Third-party stylesheets.
 
 Learn More
 For more details on the 7-1 architecture pattern and Sass guidelines, visit the Sass Boilerplate repository.
+=======
+In this project I am recreating responsible website with this layout (https://www.figma.com/design/jHDVsiVR8JBpkMsYehKCEj/Eatly?node-id=1-11265)
+
+I am using SCSS, Bite and BEM to divide code in modules and make it easier to mantain.
+
+
+
+
