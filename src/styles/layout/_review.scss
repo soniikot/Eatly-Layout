@@ -29,54 +29,67 @@
     margin-right: 20px;
     margin-bottom: 20px;
   }
-}
 
-.slider__nav {
-  display: none;
-}
+  &__slider {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 70px;
+  }
 
-.slider__nav:checked:nth-of-type(1) ~ .review__wrapper {
-  transform: translateX(0%);
-}
+  &__nav-buttons {
+    position: absolute;
+    top: 300px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
 
-.slider__nav:checked:nth-of-type(2) ~ .review__wrapper {
-  transform: translateX(-33.33%);
-}
+  &__nav-button {
+    cursor: pointer;
+    padding: 5px 50px;
+    background-color: $light-brand-color;
+    border-radius: 5px;
 
-.slider__nav:checked:nth-of-type(3) ~ .review__wrapper {
-  transform: translateX(-66.66%);
-}
+    &:hover {
+      background-color: $brand-color;
+    }
+  }
 
-.review__slider {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 70px;
-}
+  &__slider-navigation {
+    display: none;
 
-.nav-buttons {
-  position: absolute;
-  top: 300px;
-  right: 10px;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-}
+    &:checked:nth-of-type(1) ~ .review__wrapper {
+      transform: translateX(0%);
+    }
 
-.nav-button {
-  cursor: pointer;
-  padding: 5px 50px;
-  background-color: $light-brand-color;
-  border-radius: 5px;
-}
+    &:checked:nth-of-type(2) ~ .review__wrapper {
+      transform: translateX(-33.33%);
+    }
 
-.nav-button:hover {
-  background-color: $brand-color;
-}
-.slider__nav:nth-child(1):checked ~ .nav-buttons .nav-button:nth-child(1),
-.slider__nav:nth-child(2):checked ~ .nav-buttons .nav-button:nth-child(2),
-.slider__nav:nth-child(3):checked ~ .nav-buttons .nav-button:nth-child(3) {
-  background-color: $brand-color;
+    &:checked:nth-of-type(3) ~ .review__wrapper {
+      transform: translateX(-66.66%);
+    }
+
+    &:nth-child(1):checked
+      ~ .review__nav-buttons
+      .review__nav-button:nth-child(1) {
+      background-color: $brand-color;
+    }
+
+    &:nth-child(2):checked
+      ~ .review__nav-buttons
+      .review__nav-button:nth-child(2) {
+      background-color: $brand-color;
+    }
+
+    &:nth-child(3):checked
+      ~ .review__nav-buttons
+      .review__nav-button:nth-child(3) {
+      background-color: $brand-color;
+    }
+  }
 }
