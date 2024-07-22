@@ -7,7 +7,16 @@
 @import "vendors/normalize";
 
 // 3. Base stuff
+<<<<<<< HEAD
 @import "base/base", "base/fonts", "base/typography", "base/helpers";
+=======
+@import
+  'base/base',
+  'base/reset',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+>>>>>>> upstream/main
 
 // 4. Layout-related sections
 @import "layout/header", "layout/hero", "layout/footer", "layout/numbers",
