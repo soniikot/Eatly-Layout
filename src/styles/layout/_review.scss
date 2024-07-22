@@ -1,0 +1,82 @@
+.review {
+  &__wrapper {
+    width: 300%;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__card {
+    flex: 1 0 33.33%;
+    padding: 30px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  &__photo {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.slider__nav {
+  display: none;
+}
+
+.slider__nav:checked:nth-of-type(1) ~ .review__wrapper {
+  transform: translateX(0%);
+}
+
+.slider__nav:checked:nth-of-type(2) ~ .review__wrapper {
+  transform: translateX(-33.33%);
+}
+
+.slider__nav:checked:nth-of-type(3) ~ .review__wrapper {
+  transform: translateX(-66.66%);
+}
+
+.review__slider {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 300px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.nav-button {
+  cursor: pointer;
+  padding: 5px 50px;
+  background-color: $light-brand-color;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: $brand-color;
+}
+.slider__nav:nth-child(1):checked ~ .nav-buttons .nav-button:nth-child(1),
+.slider__nav:nth-child(2):checked ~ .nav-buttons .nav-button:nth-child(2),
+.slider__nav:nth-child(3):checked ~ .nav-buttons .nav-button:nth-child(3) {
+  background-color: $brand-color;
+}

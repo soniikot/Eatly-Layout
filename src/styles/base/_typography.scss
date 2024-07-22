@@ -21,6 +21,8 @@ h2,
   font-size: 47px;
   font-weight: bold;
   color: $text-color;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 // font-weight 700
@@ -31,6 +33,9 @@ h3,
   line-height: 32px;
   font-weight: bold;
   color: $text-color;
+  line-height: 32px;
+  margin-block-start: 0;
+  margin-block-end: 5px;
 }
 
 // font-weight 500
@@ -41,6 +46,8 @@ h4,
   line-height: 24px;
   font-weight: medium;
   color: $text-color;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h5,
@@ -62,8 +69,17 @@ ul {
   font-family: $text-font-stack;
   font-weight: normal;
   color: $text-color;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .span {
+}
+
+.purple-text {
   color: $brand-color;
+}
+
+.gray-comments {
+  color: $mid-grey;
 }

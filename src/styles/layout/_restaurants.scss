@@ -1,0 +1,23 @@
+.restaurants {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+    margin-top: 35px;
+    margin-bottom: 65px;
+
+    @include media("medium") {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+  &__card {
+    place-self: center;
+    width: fit-content;
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+}

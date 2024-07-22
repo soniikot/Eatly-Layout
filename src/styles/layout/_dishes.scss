@@ -1,0 +1,31 @@
+.dishes {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px 30px;
+    margin-bottom: 65px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__card {
+    position: relative;
+    width: fit-content;
+    padding: 17px;
+  }
+
+  &__like {
+    text-align: right;
+  }
+
+  &__price {
+    display: flex;
+  }
+}
+
+.add {
+  flex-grow: 1;
+  text-align: right;
+}

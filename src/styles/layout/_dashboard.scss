@@ -1,0 +1,99 @@
+.dashboard {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 10px;
+    margin-bottom: 30px;
+
+    @include media("medium") {
+      display: block;
+    }
+  }
+
+  &__title {
+    @include media("medium") {
+      text-align: center;
+    }
+  }
+  &__header {
+    flex: 0 1 50%;
+  }
+  &__orders {
+    display: grid;
+    grid-template-columns: 0.7fr;
+    gap: 10px;
+    margin: 30px;
+    @include media("medium") {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+  }
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 47%;
+    background: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 25px;
+    box-shadow: 0 20px 30px $shadow-grey;
+    padding: 43px;
+  }
+
+  &__stats-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__stats-period {
+    font-size: 19px;
+    letter-spacing: 0.6px;
+    padding: 12px 18px;
+    background: $background-color;
+    border-radius: 13px;
+  }
+
+  &__progress-bar-outer {
+    margin: 0 30px;
+    background-color: $light-brand-color;
+    border-radius: 15px;
+  }
+  &__progress-bar {
+    background-color: $brand-color;
+    padding: 4px;
+    border-radius: 15px;
+    width: 80%;
+  }
+
+  &__progress-bar-outer--orange {
+    background-color: $light-orange-color;
+  }
+
+  &__progress-bar--orange {
+    background-color: $deep-orange-color;
+    width: 80%;
+  }
+
+  &__stats-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  &__stats-header {
+    margin-left: 15px;
+    display: flex;
+  }
+
+  &__stats-image {
+    margin-right: 10px;
+  }
+
+  &__stats-content {
+    margin: 10px;
+    border: 1px solid $subtitle-grey;
+    border-radius: 19px;
+    padding-bottom: 30px;
+  }
+}

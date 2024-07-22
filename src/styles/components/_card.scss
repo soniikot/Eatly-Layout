@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-shadow: 7px 82px 41px $shadow-grey;
+  background-color: $white;
+  transition: all 0.5s ease;
+  border-radius: 30px;
+  box-shadow: 6px 71px 36px rgba(229, 229, 229, 0.7); // variable card-shadow
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__text {
+    padding: 20px;
+  }
+
+  &__tag {
+    max-width: fit-content;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-family: $header-font-stack;
+    border-radius: 5px;
+  }
+
+  &__tag--red {
+    color: #fb461d; // variable
+    background-color: #f7c5ba; // variable
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    color: $mid-grey;
+  }
+
+  &__rating {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+}

@@ -2,6 +2,40 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-  color: chocolate;
-  font-size: xx-large;
+  background-color: $subtitle-grey;
+  padding: 20px;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 1px solid $mid-grey;
+    padding: 20px;
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: 30px;
+
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__bottom {
+    padding: 20px;
+    color: $mid-grey;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__bottom-socialmedia {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.bottom-socialmedia__item {
+  width: 20px;
 }
