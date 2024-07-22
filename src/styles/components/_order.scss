@@ -1,7 +1,7 @@
 .order {
   background: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 16px 25px rgba(70, 70, 70, 0.05);
+  box-shadow: 0 16px 25px $shadow-grey;
   padding: 5px 15px;
   display: flex;
   flex-shrink: 0;

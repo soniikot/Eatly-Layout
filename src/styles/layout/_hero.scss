@@ -64,7 +64,7 @@
     align-items: center;
     gap: 20px;
     font-size: 16px;
-    color: rgba(51, 65, 85, 1); // todo variable
+    color: $dark-grey;
     font-weight: 500;
     @include media("medium") {
       justify-content: center;
