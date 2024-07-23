@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eatly</title>
+  <script type="module" crossorigin src="/main.js"></script>
+  <link rel="stylesheet" crossorigin href="/styles/main.css">
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+  <div class="container">
+    <div class="header__body">
+      <div class="logo">
+        <img class="logo__image" src="./assets/images/Logo.png" alt="fork and knife" />
+        <span class="span logo__text">eatly</span>
+      </div>
+
+      <nav class="header__menu">
+
+        <input type="checkbox" class="header__burger" id="header__burger" />
+        <label for="header__burger" class="header__burger-icon">
+          <span class="header__burger-span"></span>
+          <span class="header__burger-span"></span>
+          <span class="header__burger-span"></span>
+        </label>
+
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="">Menu</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="">Blog</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="">Pricing</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__form">
+        <button class="button button--login">
+          <span class="button__text">Login</span>
+        </button>
+        <button class="button button--purple">
+          <span class="button__text">Sign up</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+    <div class="main"><section class="hero">
+  <div class="container">
+    <div class="hero__container">
+      <div class="hero__header">
+        <div class="hero__subtitle">OVER 1000 USERS</div>
+
+        <h2 class="hero__title h1">
+          Enjoy Foods All Over The <span class="purple-text">World</span>
+        </h2>
+        <div class="hero__text">
+          EatLy help you set saving goals, earn cash back offers, Go to
+          disclaimer for more details and get paychecks up to two days early.
+          <span class="purple-text">Get a $20 bonus.</span>
+        </div>
+        <div class="hero__buttons">
+          <button class="button button--purple">
+            <span class="button__text">Get Started</span>
+          </button>
+          <button class="button button--white">
+            <span class="button__text">Go Pro</span>
+          </button>
+        </div>
+        <div class="hero__rating">
+          <div class="rating-trustpilot">
+
+            <img src="assets/images/trustpilot.svg" alt="Trustpilot" />
+          </div>
+          <div class="hero__rating-stars">
+            <img src="assets/images/Star.png" alt="5 stars" />
+            <span class="">4900+</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-wrapper">
+          <img class="hero__image-plate" src="assets/images/hero_salmon_plate.png"
+            alt="yummy grilled salmon and salad" />
+
+
+          <div class="hero__image-graph">
+            <img src="assets/images/graph.svg" alt="Graph with growth of sales" />
+          </div>
+
+          <div class="hero__order-outer">
+            <div class="hero__order order">
+
+              <div class="order__image"><img src="assets/images/hero_salmon_plate.png" alt="yummy_salmon" />
+              </div>
+              <div class="order__text">
+                <h2 class="order__name">Grill Fish</h2>
+                <p class="order__status">On The Way</p>
+                <div class="order__time">
+                  3:09
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div> <section class="numbers">
+  <div class="container">
+    <div class="numbers__wrapper">
+      <div class="numbers__text">
+        <h1 class="numbers__header">10K+</h1>
+        <p class="numbers__paragraph">
+          Satisfied Costumers All Great Over The World
+        </p>
+      </div>
+      <div class="numbers__text">
+        <h1 class="numbers__header">4M</h1>
+        <p class="numbers__paragraph">
+          Healthy Dishes Sold Including Milk Shakes Smooth
+        </p>
+      </div>
+      <div class="numbers__text">
+        <h1 class="numbers__header">99.99%</h1>
+        <p class="numbers__paragraph">
+          Reliable Customer Support We Provide Great Experiences
+        </p>
+      </div>
+    </div>
+  </div>
+</section> <section class="mobile">
+    <div class="container">
+        <div class="mobile__wrapper">
+            <div class="mobile__image">
+                <img src="assets/images/phone.png" alt="">
+            </div>
+            <div class="mobile__header">
+                <h2 class="mobile__title
+            ">Premium Quality For Your Health</h2>
+                <div class="mobile__text">
+                    <ul class="mobile__list">
+                        <li class="mobile__list-item">Premium quality food is made with ingredients that are packed with
+                            essential vitamins,
+                            minerals.</li>
+                        <li class="mobile__list-item">These foods promote overall wellness by support healthy digestion
+                            and boosting immunity</li>
+                    </ul>
+                    <div class="mobile__button">
+                        <button class="button button--purple">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <section class="restaurants">
+    <div class="container">
+        <h2 class="restaurants__title">
+            Our Top <span class="purple-text">Restaurants</span>
+        </h2>
+        <div class="restaurants__wrapper">
+            <div class=" restaurants__card card">
+                <div class="card__image">
+                    <img src="assets/images/restaraunt.png" alt="" />
+                </div>
+                <div class="card__text">
+                    <div class="card__tag card__tag--red">Healthy</div>
+                    <h3>The Chicken King</h3>
+                    <div class="card__details">
+                        <div class="card__time">24 min</div>
+                        <div class="card__rating">
+                            <img src="assets/images/purple_star.png" alt="star" />
+                            4.9
+                        </div>
+                        <div>
+                            <img src="assets/images/bookmark.png" alt="bookmark" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" restaurants__card card">
+                <div class="card__image">
+                    <img src="assets/images/restaraunt.png" alt="" />
+                </div>
+                <div class="card__text">
+                    <div class="card__tag card__tag--red">Healthy</div>
+                    <h3>The Chicken King</h3>
+                    <div class="card__details">
+                        <div class="card__time">24 min</div>
+                        <div class="card__rating">
+                            <img src="assets/images/purple_star.png" alt="star" />
+                            4.9
+                        </div>
+                        <div>
+                            <img src="assets/images/bookmark.png" alt="bookmark" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" restaurants__card card">
+                <div class="card__image">
+                    <img src="assets/images/restaraunt.png" alt="" />
+                </div>
+                <div class="card__text">
+                    <div class="card__tag card__tag--red">Healthy</div>
+                    <h3>The Chicken King</h3>
+                    <div class="card__details">
+                        <div class="card__time">24 min</div>
+                        <div class="card__rating">
+                            <img src="assets/images/purple_star.png" alt="star" />
+                            4.9
+                        </div>
+                        <div>
+                            <img src="assets/images/bookmark.png" alt="bookmark" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <section class="dishes">
+    <div class="container">
+        <h2 class="dishes__title">Our Top <span class="purple-text">Dishes</span></h2>
+        <div class="dishes__wrapper">
+
+            <div class="dishes__card card">
+                <div class="dishes__image">
+                    <div class="dishes__like"><img src="assets/images/heart.svg" alt=""></div>
+                    <img src="assets/images/hero_salmon_plate.png" alt=" grilled salmon">
+                </div>
+                <div class="card__text">
+                    <h5 class="card__tag card__tag--red">Top</h5>
+                    <h3>Chicken</h3>
+                    <div class="card__details">
+                        <p class="card__time">24 min</h6>
+                        <div class="card__rating"><span class="details__raiting-number">- 4.9</span> <img
+                                src="assets/images/purple_star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dishes__price">
+                        <h3>$12.99</h3>
+                        <div class="add"><img src="assets/images/add.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dishes__card card">
+                <div class="dishes__image">
+                    <div class="dishes__like"><img src="assets/images/heart.svg" alt=""></div>
+                    <img src="assets/images/hero_salmon_plate.png" alt=" grilled salmon">
+                </div>
+                <div class="card__text">
+                    <h5 class="card__tag card__tag--red">Top</h5>
+                    <h3>Chicken</h3>
+                    <div class="card__details">
+                        <p class="card__time">24 min</h6>
+                        <div class="card__rating"><span class="details__raiting-number">- 4.9</span> <img
+                                src="assets/images/purple_star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dishes__price">
+                        <h3>$12.99</h3>
+                        <div class="add"><img src="assets/images/add.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dishes__card card">
+                <div class="dishes__image">
+                    <div class="dishes__like"><img src="assets/images/heart.svg" alt=""></div>
+                    <img src="assets/images/hero_salmon_plate.png" alt=" grilled salmon">
+                </div>
+                <div class="card__text">
+                    <h5 class="card__tag card__tag--red">Top</h5>
+                    <h3>Chicken</h3>
+                    <div class="card__details">
+                        <p class="card__time">24 min</h6>
+                        <div class="card__rating"><span class="details__raiting-number">- 4.9</span> <img
+                                src="assets/images/purple_star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dishes__price">
+                        <h3>$12.99</h3>
+                        <div class="add"><img src="assets/images/add.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dishes__card card">
+                <div class="dishes__image">
+                    <div class="dishes__like"><img src="assets/images/heart.svg" alt=""></div>
+                    <img src="assets/images/hero_salmon_plate.png" alt=" grilled salmon">
+                </div>
+                <div class="card__text">
+                    <h5 class="card__tag card__tag--red">Top</h5>
+                    <h3>Chicken</h3>
+                    <div class="card__details">
+                        <p class="card__time">24 min</h6>
+                        <div class="card__rating"><span class="details__raiting-number">- 4.9</span> <img
+                                src="assets/images/purple_star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dishes__price">
+                        <h3>$12.99</h3>
+                        <div class="add"><img src="assets/images/add.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dishes__card card">
+                <div class="dishes__image">
+                    <div class="dishes__like"><img src="assets/images/heart.svg" alt=""></div>
+                    <img src="assets/images/hero_salmon_plate.png" alt=" grilled salmon">
+                </div>
+                <div class="card__text">
+                    <h5 class="card__tag card__tag--red">Top</h5>
+                    <h3>Chicken</h3>
+                    <div class="card__details">
+                        <p class="card__time">24 min</h6>
+                        <div class="card__rating"><span class="details__raiting-number">- 4.9</span> <img
+                                src="assets/images/purple_star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dishes__price">
+                        <h3>$12.99</h3>
+                        <div class="add"><img src="assets/images/add.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+</section> <section class="dashboard">
+    <div class="container dashboard__wrapper">
+        <div class="dashboard__header">
+            <h2 class="dashboard__title ">Control <span class="purple-text">Purchases</span> Via Dashboard </h2>
+            <div class="dashboard__orders">
+                <div class="order">
+                    <div class="order__image"><img src="assets/images/hero_salmon_plate.png"
+                            alt="yummy_salmon" />
+                    </div>
+                    <div class="order__text">
+                        <h2 class="order__name">Grill Fish</h2>
+                        <p class="order__status">On The Way</p>
+                        <div class="order__time">
+                            3:09
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="order__image"><img src="assets/images/hero_salmon_plate.png"
+                            alt="yummy_salmon" />
+                    </div>
+                    <div class="order__text">
+                        <h2 class="order__name">Grill Fish</h2>
+                        <p class="order__status">On The Way</p>
+                        <div class="order__time">
+                            3:09
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="order__image"><img src="assets/images/hero_salmon_plate.png"
+                            alt="yummy_salmon" />
+                    </div>
+                    <div class="order__text">
+                        <h2 class="order__name">Grill Fish</h2>
+                        <p class="order__status">On The Way</p>
+                        <div class="order__time">
+                            3:09
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" dashboard__stats ">
+            <div class="dashboard__stats-header">
+                <h3>Purchases</h3>
+                <div class="dashboard__stats-period">
+                    <select name="dashboard__stats-period">
+                        <option value="week">This week</option>
+                        <option value="month">This month</option>
+                        <option value="year">This year</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="dashboard__stats-content">
+                <div class="dashboard__stats-inner">
+                    <div class="dashboard__stats-title">
+                        <div class="dashboard__stats-image"><img src="assets/images/stats-icon1.png" alt="">
+                        </div>
+                        <div class="dashboard__stats-text">
+                            <h4>Expense</h4>
+                            <p class="gray-comments">Increased By 10%</p>
+                        </div>
+                    </div>
+                    <h3>$409</h3>
+                </div>
+                <div class="dashboard__progress-bar-outer">
+                    <div class="dashboard__progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="dashboard__stats-content">
+                <div class="dashboard__stats-inner">
+                    <div class="dashboard__stats-title">
+                        <div class="dashboard__stats-image"><img src="assets/images/stats-icon1.png" alt="">
+                        </div>
+                        <div class="dashboard__stats-text">
+                            <h4>Expense</h4>
+                            <p class="gray-comments">Increased By 10%</p>
+                        </div>
+                    </div>
+                    <h3>$409</h3>
+                </div>
+                <div class="dashboard__progress-bar-outer dashboard__progress-bar-outer--orange">
+                    <div class=" dashboard__progress-bar dashboard__progress-bar--orange"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> <section class="review">
+    <div class="container">
+        <h2 class="review__title h3"><span class="purple-text">Customer</span> Say</h2>
+        <div class="review__slider">
+            <input type="radio" name="slider" id="slide1" class="review__slider-navigation" checked="checked" />
+            <input type="radio" name="slider" id="slide2" class="review__slider-navigation" />
+            <input type="radio" name="slider" id="slide3" class="review__slider-navigation" />
+
+            <div class="review__wrapper">
+                <div class="review__card card" id="content1">
+                    <div class="review__header">
+                        <div class="review__photo"><img src="assets/images/customer-photo.png" alt=""></div>
+                        <div class="review__text">
+                            <h4>Alexander R.</h4>
+                            <p>1 Year With Us</p>
+                        </div>
+                    </div>
+                    <div class="review__content">“ Online invoice payment helps companies save time, are faster and
+                        save maximum effort for the clients and save maximum effort. Online invoice payment helps
+                        companies save time ”</div>
+                    <div class="review__stars"><img src="assets/images/Star.png" alt=""></div>
+                </div>
+
+
+                <div class="review__card card" id="content2">
+                    <div class="review__header">
+                        <div class="review__photo"><img src="assets/images/customer-photo.png" alt=""></div>
+                        <div class="review__text">
+                            <h4>Alexander R.</h4>
+                            <p>1 Year With Us</p>
+                        </div>
+                    </div>
+                    <div class="review__content">“ Online invoice payment helps companies save time, are faster and
+                        save maximum effort for the clients and save maximum effort. Online invoice payment helps
+                        companies save time ”</div>
+                    <div class="review__stars"><img src="assets/images/Star.png" alt=""></div>
+                </div>
+
+                <div class="review__card card" id="content3">
+                    <div class="review__header">
+                        <div class="review__photo"><img src="assets/images/customer-photo.png" alt=""></div>
+                        <div class="review__text">
+                            <h4>Alexander R.</h4>
+                            <p>1 Year With Us</p>
+                        </div>
+                    </div>
+                    <div class="review__content">“ Online invoice payment helps companies save time, are faster and
+                        save maximum effort for the clients and save maximum effort. Online invoice payment helps
+                        companies save time ”</div>
+                    <div class="review__stars"><img src="assets/images/Star.png" alt=""></div>
+                </div>
+
+                <div class="review__card card" id="content4">
+                    <div class="review__header">
+                        <div class="review__photo"><img src="assets/images/customer-photo.png" alt=""></div>
+                        <div class="review__text">
+                            <h4>Alexander R.</h4>
+                            <p>1 Year With Us</p>
+                        </div>
+                    </div>
+                    <div class="review__content">“ Online invoice payment helps companies save time, are faster and
+                        save maximum effort for the clients and save maximum effort. Online invoice payment helps
+                        companies save time ”</div>
+                    <div class="review__stars"><img src="assets/images/Star.png" alt=""></div>
+                </div>
+
+                <div class="review__card card" id="content5">
+                    <div class="review__header">
+                        <div class="review__photo"><img src="assets/images/customer-photo.png" alt=""></div>
+                        <div class="review__text">
+                            <h4>Alexander R.</h4>
+                            <p>1 Year With Us</p>
+                        </div>
+                    </div>
+                    <div class="review__content">“ Online invoice payment helps companies save time, are faster and
+                        save maximum effort for the clients and save maximum effort. Online invoice payment helps
+                        companies save time ”</div>
+                    <div class="review__stars"><img src="assets/images/Star.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="review__nav-buttons">
+                <label for="slide1" class="review__nav-button"></label>
+                <label for="slide2" class="review__nav-button"></label>
+                <label for="slide3" class="review__nav-button"></label>
+            </div>
+        </div>
+    </div>
+    </div>
+</section> <section class="banner">
+    <div class="container">
+        <div class="banner__wrapper">
+            <h2 class="banner__title h1">GET 50%</h2>
+            <div class="banner__input">
+                <form>
+                    <input class="banner__input" type="email" name="
+                email" placeholder="Enter your email Address" />
+                    <button class="banner__button button button--purple">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+            <div class="banner__image">
+                <img src="assets/images/hero_salmon_plate.png" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+    <footer class="footer">
+    <nav class="footer__menu">
+        <div class="logo">
+            <img class="logo__image" src="./assets/images/Logo.png" alt="fork and knife" />
+            <span class="span logo__text">eatly</span>
+        </div>
+
+        <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Menu</a>
+            </li>
+            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Blog</a>
+            </li>
+            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Pricing</a>
+            </li>
+            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="footer__bottom">
+        <div class="footer__bottom-copywrite grey-text">© 2023 EATLY All Rights Reserved.</div>
+
+        <div class="footer__bottom-socialmedia
+    ">
+            <div class="bottom-socialmedia__item"> <img src="assets/images/instagram.svg" alt="instagram">
+            </div>
+            <div class="bottom-socialmedia__item"> <img src="assets/images/facebook.svg" alt="facebook">
+            </div>
+            <div class="bottom-socialmedia__item"> <img src="assets/images/linkedin.svg" alt="linkedin">
+            </div>
+            <div class="bottom-socialmedia__item"> <img src="assets/images/twitter.svg" alt="x"></div>
+        </div>
+    </div>
+</footer>
+  </div>
+</body>
+
+</html>

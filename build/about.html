@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <script type="module" crossorigin src="/main.js"></script>
+  <link rel="stylesheet" crossorigin href="/styles/main.css">
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+  <div class="container">
+    <div class="header__body">
+      <div class="logo">
+        <img class="logo__image" src="./assets/images/Logo.png" alt="fork and knife" />
+        <span class="span logo__text">eatly</span>
+      </div>
+
+      <nav class="header__menu">
+
+        <input type="checkbox" class="header__burger" id="header__burger" />
+        <label for="header__burger" class="header__burger-icon">
+          <span class="header__burger-span"></span>
+          <span class="header__burger-span"></span>
+          <span class="header__burger-span"></span>
+        </label>
+
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="">Menu</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="">Blog</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="">Pricing</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__form">
+        <button class="button button--login">
+          <span class="button__text">Login</span>
+        </button>
+        <button class="button button--purple">
+          <span class="button__text">Sign up</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+    <footer class="footer">
+    <nav class="footer__menu">
+        <div class="logo">
+            <img class="logo__image" src="./assets/images/Logo.png" alt="fork and knife" />
+            <span class="span logo__text">eatly</span>
+        </div>
+
+        <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Menu</a>
+            </li>
+            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Blog</a>
+            </li>
+            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Pricing</a>
+            </li>
+            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="footer__bottom">
+        <div class="footer__bottom-copywrite grey-text">© 2023 EATLY All Rights Reserved.</div>
+
+        <div class="footer__bottom-socialmedia
+    ">
+            <div class="bottom-socialmedia__item"> <img src="assets/images/instagram.svg" alt="instagram">
+            </div>
+            <div class="bottom-socialmedia__item"> <img src="assets/images/facebook.svg" alt="facebook">
+            </div>
+            <div class="bottom-socialmedia__item"> <img src="assets/images/linkedin.svg" alt="linkedin">
+            </div>
+            <div class="bottom-socialmedia__item"> <img src="assets/images/twitter.svg" alt="x"></div>
+        </div>
+    </div>
+</footer>
+    %{main}%
+  </div>
+</body>
+
+</html>

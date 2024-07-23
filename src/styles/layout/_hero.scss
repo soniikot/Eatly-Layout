@@ -59,7 +59,7 @@
     margin-bottom: 33px;
   }
 
-  &__raiting {
+  &__rating {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -69,6 +69,11 @@
     @include media("medium") {
       justify-content: center;
     }
+  }
+
+  &__rating-stars {
+    display: flex;
+    align-items: center;
   }
 
   &__image {
