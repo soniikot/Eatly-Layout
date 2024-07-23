@@ -6,6 +6,7 @@ import getHtmlInputs from "./configs/getHtmlInputs.js";
 import path from "path";
 
 export default defineConfig({
+  base: "/vite-for-making-layouts/",
   plugins: [embedTemplates(), moveHtmlFiles()],
   publicDir: "src/public",
   build: {
