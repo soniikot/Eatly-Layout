@@ -1,10 +1,10 @@
 .hero {
   &__container {
     display: flex;
-    padding: 200px 0px 100px;
+    padding: 265px 0px 100px;
     justify-content: space-between;
     align-items: center;
-    -moz-column-gap: 10px;
+
     column-gap: 10px;
     @include media("medium") {
       flex-direction: column;
@@ -14,6 +14,7 @@
 
   &__header {
     flex: 1 1 49%;
+
     @include media("medium") {
       margin-bottom: 100px;
     }
@@ -21,7 +22,7 @@
 
   &__subtitle {
     display: inline-block;
-    color: $subtitle-grey;
+    color: $mid-grey;
     font-family: $header-font-stack;
     font-size: 15px;
     padding-left: 60px;
@@ -43,8 +44,11 @@
   }
 
   &__title {
-    letter-spacing: -3px;
+    font-size: 75px;
+    //letter-spacing: -3px;
     margin-bottom: 15px;
+    line-height: 1.2;
+    margin: 0 0 20px;
   }
 
   &__text {
@@ -120,6 +124,9 @@
     bottom: -15%;
     left: 0;
     max-width: 50%;
+  }
+  &__hero__image-plate {
+    min-width: 500px;
   }
 
   &__image-graph::before {

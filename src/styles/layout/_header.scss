@@ -30,6 +30,8 @@
 
   &__menu {
     display: flex;
+    flex: 1 1 auto;
+    margin-left: 88px;
   }
 
   &__menu-link {
