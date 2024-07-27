@@ -1,10 +1,10 @@
 .hero {
   &__container {
     display: flex;
-    padding: 345px 15px 100px;
+    padding: 400px 15px 100px;
     justify-content: space-between;
     align-items: center;
-
+    margin-bottom: 25px;
     column-gap: 10px;
     @include media("medium") {
       flex-direction: column;
@@ -112,8 +112,8 @@
   &__image-wrapper::after {
     content: "";
     position: absolute;
-    top: -10%;
-    left: 90%;
+    top: 12%;
+    left: 102%;
     width: 20%;
     height: 20%;
     z-index: -1;
@@ -135,7 +135,7 @@
     content: "";
     position: absolute;
     top: 90%;
-    left: 8%;
+    left: 0%;
     width: 38px;
     height: 33px;
     z-index: 2;
@@ -153,8 +153,8 @@
   &__order-outer::before {
     content: "";
     position: absolute;
-    bottom: 100%;
-    right: 8%;
+    bottom: 112%;
+    right: -20%;
     width: 42px;
     height: 28px;
     background: url("/src/public/assets/images/pattern-1.svg") top center
