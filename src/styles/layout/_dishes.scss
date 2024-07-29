@@ -17,15 +17,11 @@
   }
 
   &__like {
-    text-align: right;
+    float: right;
   }
 
   &__price {
     display: flex;
+    justify-content: space-between;
   }
-}
-
-.add {
-  flex-grow: 1;
-  text-align: right;
 }

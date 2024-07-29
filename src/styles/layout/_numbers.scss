@@ -3,6 +3,7 @@
 
   &__wrapper {
     display: flex;
+    gap: 30px;
     padding-top: 10px;
     padding-left: 110px;
     color: $white;
@@ -14,7 +15,6 @@
 
   &__header {
     font-size: 43px;
-    margin: 10px;
   }
 
   &__text {
