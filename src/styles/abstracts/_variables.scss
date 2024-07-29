@@ -5,12 +5,13 @@
 /// Regular font family
 /// @type List
 $text-font-stack: "Inter", "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
-  "Helvetica", "Arial", sans-serif !default;
+  "Helvetica", "Arial", sans-serif;
 
 $header-font-stack: "Poppins-SemiBold", "Open Sans", "Helvetica Neue Light",
-  "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+  "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-/// Code (monospace) font family
+/// Code (monospace)
+///  font family
 /// @type List
 $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
   "Monaco", monospace !default;

@@ -1,10 +1,10 @@
 .hero {
   &__container {
+    margin-bottom: 20px;
     display: flex;
     padding: 230px 15px 100px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
     column-gap: 10px;
     @include media("medium") {
       flex-direction: column;

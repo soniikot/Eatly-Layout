@@ -3,11 +3,12 @@
 
   &__wrapper {
     display: flex;
-    gap: 30px;
-    padding-top: 10px;
-    padding-left: 110px;
+
     color: $white;
     justify-content: center;
+    align-items: center;
+
+    padding: 55px 10px;
     @include media("medium") {
       flex-direction: column;
     }
@@ -19,9 +20,9 @@
 
   &__text {
     flex: 0 1 33.33%;
-    margin: 25px;
+
     border-right: 1px solid $subtitle-grey;
-    padding: 15px 30px;
+
     text-align: center;
     @include media("medium") {
       border-bottom: 1px solid $subtitle-grey;

@@ -10,29 +10,25 @@
 
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins") url("/src/public/assets/fonts/Poppins/Poppins-Bold.ttf")
+  src: url("/src/public/assets/fonts/Poppins/Poppins-Bold.ttf")
     format("truetype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Poppins-SemiBold";
-  src: local("Poppins")
-    url("/src/public/assets/fonts/Poppins/Poppins-SemiBold.ttf")
+  src: url("/src/public/assets/fonts/Poppins/Poppins-SemiBold.ttf")
     format("truetype");
-  font-weight: 600;
 }
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter") url("/src/public/assets/fonts/Inter.ttf")
-    format("truetype");
+  src: url("/src/public/assets/fonts/Inter.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "PJ";
-  src: local("PJ")
-    url("..../assets/fonts/vite-for-making-layouts/src/public/assets/fonts/PlusJakartaSans-SemiBold.ttf")
+  src: url("..../assets/fonts/vite-for-making-layouts/src/public/assets/fonts/PlusJakartaSans-SemiBold.ttf")
     format("truetype");
   font-style: normal;
   font-weight: 400;

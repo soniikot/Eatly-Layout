@@ -17,7 +17,8 @@
 
 // 5. Components
 @import "components/button", "components/logo", "components/order",
-  "components/banner", "components/card"; // 6. Page-specific styles
+  "components/banner", "components/card", "components/viewAll";
+// 6. Page-specific styles
 @import "pages/home";
 
 // 7. Themes
