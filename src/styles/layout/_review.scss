@@ -13,6 +13,8 @@
   &__card {
     flex: 1 0 33.33%;
     padding: 30px;
+    font-family: $header-font-stack-normal;
+    font-weight: 400;
   }
 
   &__header {
@@ -36,13 +38,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
   }
 
   &__nav-buttons {
-    position: absolute;
-    top: 300px;
-    right: 10px;
+    position: absolute; /* Ensures the element is positioned relative to its nearest positioned ancestor */
+    bottom: 25px; /* Distance from the bottom of the container */
+    right: 10px; /* Distance from the left of the container */
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;

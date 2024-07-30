@@ -25,14 +25,16 @@
   }
 
   &__input {
-    height: 80px;
-    width: 355px;
+    background-color: $white;
+    height: 70px;
+    width: 390px;
     border-radius: 16px;
   }
 
   &__button {
+    height: 50px;
     position: absolute;
-    left: 230px;
-    bottom: 110px;
+    left: 260px;
+    bottom: 120px;
   }
 }

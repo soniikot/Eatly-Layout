@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: flex-start;
     column-gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 120px;
 
     @include media("medium") {
       display: block;
@@ -23,9 +23,9 @@
 
   &__orders {
     display: grid;
-    grid-template-columns: 0.7fr;
+    grid-template-columns: 0.6fr;
     gap: 10px;
-    margin: 30px;
+    margin-top: 30px;
     @include media("medium") {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 15px;
@@ -37,8 +37,8 @@
     display: flex;
     flex-direction: column;
     flex: 0 1 47%;
-    background: $white; // variable
-    border: 1px solid #edf2f7; // variable
+    background: $white;
+    border: 1px solid $subtitle-grey;
     border-radius: 25px;
     box-shadow: 0 20px 30px $shadow-grey;
     padding: 43px;
@@ -57,6 +57,8 @@
     padding: 12px 18px;
     background: $background-color;
     border-radius: 13px;
+    margin: 0;
+    border: none;
   }
 
   &__progress-bar-outer {

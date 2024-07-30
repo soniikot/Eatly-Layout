@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 55px 10px;
+    padding: 60px 100px;
     @include media("medium") {
       flex-direction: column;
     }
@@ -19,10 +19,9 @@
   }
 
   &__text {
+    padding: 0 40px;
     flex: 0 1 33.33%;
-
     border-right: 1px solid $subtitle-grey;
-
     text-align: center;
     @include media("medium") {
       border-bottom: 1px solid $subtitle-grey;
