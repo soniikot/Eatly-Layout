@@ -1,25 +1,47 @@
 .review {
+  margin-bottom: 200px;
   &__wrapper {
     width: 300%;
     display: flex;
-    gap: 20px;
+    gap: 50px;
     transition: transform 0.4s ease-in-out;
   }
 
   &__title {
     text-align: center;
+    margin-bottom: 60px;
   }
 
   &__card {
-    flex: 1 0 33.33%;
+    flex: 1 0 530px;
     padding: 30px;
     font-family: $header-font-stack-normal;
-    font-weight: 400;
+    font-size: 18px;
+    color: $mid-grey;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+  }
+
+  &__card--no_photo {
+    height: fit-content;
   }
 
   &__header {
     display: flex;
     align-items: center;
+    position: relative;
+  }
+
+  &__header:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 58px;
+    height: 44px;
+    transform: translateY(-50%);
+    background: url(/src/public/assets/images/quotes.svg) top center no-repeat;
+    background-size: cover;
   }
 
   &__content {
@@ -42,9 +64,9 @@
   }
 
   &__nav-buttons {
-    position: absolute; /* Ensures the element is positioned relative to its nearest positioned ancestor */
-    bottom: 25px; /* Distance from the bottom of the container */
-    right: 10px; /* Distance from the left of the container */
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
@@ -52,10 +74,9 @@
 
   &__nav-button {
     cursor: pointer;
-    padding: 5px 50px;
+    padding: 5px 110px;
     background-color: $light-brand-color;
-    border-radius: 5px;
-
+    border-radius: 30px;
     &:hover {
       background-color: $brand-color;
     }

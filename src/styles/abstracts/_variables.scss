@@ -7,10 +7,13 @@
 $text-font-stack: "Inter", "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
   "Helvetica", "Arial", sans-serif;
 
-$header-font-stack: "Poppins-SemiBold", "Open Sans", "Helvetica Neue Light",
+$header-font-stack: "Poppins-Bold", "Open Sans", "Helvetica Neue Light",
   "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 ///normal
-$header-font-stack-normal: "Poppins", "Open Sans", "Helvetica Neue Light",
+$header-font-stack-semibold: "Poppins-Semibold", "Open Sans",
+  "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$header-font-stack-normal: "Poppins-Medium", "Open Sans", "Helvetica Neue Light",
   "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 /// Code (monospace)
@@ -23,7 +26,6 @@ $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
 $text-color: rgb(34, 34, 34) !default;
 
 ///@type Color
-
 $background-color: rgb(249, 249, 249);
 
 /// @type Color
@@ -31,7 +33,8 @@ $brand-color: rgb(108, 95, 188) !default;
 
 /// @type Color
 $light-brand-color: rgb(197, 191, 237) !default;
-
+/// @type Color
+$very-light-brand-color: rgb(246, 245, 249) !default;
 $deep-orange-color: orange;
 $light-orange-color: rgb(249, 198, 104);
 

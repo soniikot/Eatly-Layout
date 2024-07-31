@@ -6,7 +6,6 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-
     margin-top: 45px;
     margin-bottom: 65px;
 
@@ -17,10 +16,14 @@
 
   &__title {
     text-align: center;
+    font-weight: 300;
   }
   &__card {
     place-self: center;
     width: fit-content;
-    margin: 10px;
+  }
+
+  &__card-text {
+    padding: 20px;
   }
 }

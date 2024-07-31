@@ -1,6 +1,6 @@
 .footer {
   background-color: $subtitle-grey;
-  padding: 20px;
+  padding: 20px 90px 90px 110px;
 
   &__menu {
     display: flex;
@@ -13,26 +13,22 @@
 
   &__menu-list {
     display: flex;
-    gap: 30px;
-
+    gap: 75px;
     font-weight: 500;
     font-size: 18px;
   }
 
   &__bottom {
-    padding: 20px;
+    padding-top: 50px;
+
     color: $mid-grey;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
   }
 
   &__bottom-socialmedia {
+    padding-right: 50px;
     display: flex;
-    gap: 20px;
+    gap: 50px;
   }
-}
-
-.bottom-socialmedia__item {
-  width: 20px;
 }

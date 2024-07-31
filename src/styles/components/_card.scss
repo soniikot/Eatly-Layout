@@ -12,16 +12,12 @@
     transform: scale(1.1);
   }
 
-  &__text {
-    padding: 20px;
-  }
-
   &__tag {
     max-width: fit-content;
     padding: 3px 5px;
     margin-bottom: 5px;
     font-size: 13px;
-    font-family: $header-font-stack;
+    font-family: $header-font-stack-normal;
     border-radius: 5px;
   }
 

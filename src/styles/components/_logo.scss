@@ -3,11 +3,23 @@
   align-items: center;
 
   &__text {
-    font-family: $header-font-stack;
+    font-family: $header-font-stack-semibold;
     font-size: 21px;
-    font-weight: 800;
-    margin-left: 10px;
+    font-weight: 600;
+    margin-left: 15px;
     color: $brand-color;
     line-height: 24.15px;
+  }
+}
+
+.logo__image {
+  &--footer {
+    width: 60px;
+  }
+}
+
+.logo__text {
+  &--footer {
+    font-size: 28px;
   }
 }

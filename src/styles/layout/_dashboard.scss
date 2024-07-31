@@ -4,7 +4,9 @@
     justify-content: space-between;
     align-items: flex-start;
     column-gap: 10px;
-    margin-bottom: 120px;
+    padding-bottom: 130px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid $mid-grey;
 
     @include media("medium") {
       display: block;
@@ -36,23 +38,23 @@
   &__stats {
     display: flex;
     flex-direction: column;
-    flex: 0 1 47%;
+    flex: 0 1 43%;
     background: $white;
     border: 1px solid $subtitle-grey;
     border-radius: 25px;
     box-shadow: 0 20px 30px $shadow-grey;
-    padding: 43px;
+    padding: 45px;
   }
 
   &__stats-header {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   &__stats-period {
-    font-size: 19px;
+    font-size: 10px;
     letter-spacing: 0.6px;
     padding: 12px 18px;
     background: $background-color;
@@ -86,10 +88,10 @@
   &__stats-inner {
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    padding: 25px 0;
   }
 
-  &__stats-header {
+  &__stats-title {
     margin-left: 15px;
     display: flex;
   }

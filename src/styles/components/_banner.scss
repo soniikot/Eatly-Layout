@@ -1,16 +1,18 @@
 .banner {
+  margin-bottom: 250px;
   &__wrapper {
     background-image: url("/src/public/assets/images/banner-bg.jpg");
-    border-radius: 15px;
-    height: 300px;
-    padding: 30px;
+    border-radius: 40px;
+    height: 280px;
+    padding-top: 58px;
+    padding-left: 100px;
     position: relative;
     margin-top: 50px;
     margin-bottom: 100px;
   }
 
   &__title {
-    color: $white;
+    color: $very-light-brand-color;
     font-weight: 900;
   }
   &__image {
@@ -25,16 +27,17 @@
   }
 
   &__input {
-    background-color: $white;
+    background-color: $very-light-brand-color;
     height: 70px;
-    width: 390px;
+    width: 440px;
     border-radius: 16px;
+    padding-left: 10px;
   }
 
   &__button {
-    height: 50px;
     position: absolute;
-    left: 260px;
-    bottom: 120px;
+    height: 54px;
+    left: 390px;
+    bottom: 70px;
   }
 }
