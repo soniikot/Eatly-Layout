@@ -5,6 +5,9 @@
     display: flex;
     gap: 50px;
     transition: transform 0.4s ease-in-out;
+    @include media("medium") {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -14,6 +17,7 @@
 
   &__card {
     flex: 1 0 530px;
+
     padding: 30px;
     font-family: $header-font-stack-normal;
     font-size: 18px;

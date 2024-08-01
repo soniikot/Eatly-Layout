@@ -1,11 +1,14 @@
 .footer {
   background-color: $subtitle-grey;
   padding: 20px 90px 90px 110px;
-
+  @include media("medium") {
+    padding: 10px;
+  }
   &__menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 50px;
     margin: 20px;
     border-bottom: 1px solid $mid-grey;
     padding: 20px;
@@ -13,7 +16,8 @@
 
   &__menu-list {
     display: flex;
-    gap: 75px;
+    flex-grow: 1;
+    justify-content: space-between;
     font-weight: 500;
     font-size: 18px;
   }

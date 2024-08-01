@@ -16,6 +16,9 @@
     flex: 0 1 48%;
     padding-left: 130px;
     margin-top: 40px;
+    @include media("medium") {
+      padding-left: 0px;
+    }
   }
 
   &__title {
@@ -24,6 +27,9 @@
     font-weight: 800;
     line-height: 1;
     margin-bottom: 50px;
+    @include media("medium") {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -62,6 +68,9 @@
   &__button {
     position: relative;
     margin: 40px;
+    @include media("medium") {
+      text-align: center;
+    }
   }
 
   &__button:after {
@@ -73,6 +82,9 @@
     height: 65px;
     background: url(/src/public/assets/images/arrow2.png) top center no-repeat;
     background-size: cover;
-    //transform: rotate(90deg);
+
+    @include media("medium") {
+      display: none;
+    }
   }
 }
