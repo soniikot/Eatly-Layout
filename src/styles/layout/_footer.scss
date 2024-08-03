@@ -16,15 +16,17 @@
 
   &__menu-list {
     display: flex;
-    flex-grow: 1;
+    gap: 30px;
     justify-content: space-between;
     font-weight: 500;
     font-size: 18px;
+    @include media("small") {
+      display: none;
+    }
   }
 
   &__bottom {
     padding-top: 50px;
-
     color: $mid-grey;
     display: flex;
     justify-content: space-between;

@@ -22,12 +22,6 @@
   max-width: $max-width; /* 1 */
   margin: 0 auto;
   padding: 0 15px; /* 3 */
-
-  @include media("small") {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-  }
 }
 
 /**

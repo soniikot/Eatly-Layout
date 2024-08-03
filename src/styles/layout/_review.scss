@@ -17,13 +17,15 @@
 
   &__card {
     flex: 1 0 530px;
-
     padding: 30px;
     font-family: $header-font-stack-normal;
     font-size: 18px;
     color: $mid-grey;
     border: 1px solid $border-color;
     border-radius: 20px;
+    @include media("medium") {
+      flex: 1 0 100%;
+    }
   }
 
   &__card--no_photo {
@@ -72,8 +74,11 @@
     bottom: 25px;
     right: 10px;
     display: flex;
-    justify-content: flex-end;
+
     margin-top: 20px;
+    @include media("small") {
+      right: 50px;
+    }
   }
 
   &__nav-button {
@@ -83,6 +88,9 @@
     border-radius: 30px;
     &:hover {
       background-color: $brand-color;
+    }
+    @include media("medium") {
+      padding: 5px 50px;
     }
   }
 
@@ -95,10 +103,16 @@
 
     &:checked:nth-of-type(2) ~ .review__wrapper {
       transform: translateX(-33.33%);
+      @include media("small") {
+        transform: translateX(-110%);
+      }
     }
 
     &:checked:nth-of-type(3) ~ .review__wrapper {
       transform: translateX(-66.66%);
+      @include media("small") {
+        transform: translateX(-220%);
+      }
     }
 
     &:nth-child(1):checked

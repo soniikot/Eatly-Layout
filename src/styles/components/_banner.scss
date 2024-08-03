@@ -9,6 +9,9 @@
     position: relative;
     margin-top: 50px;
     margin-bottom: 100px;
+    @include media("small") {
+      padding-left: 40px;
+    }
   }
 
   &__title {
@@ -29,15 +32,22 @@
       display: none;
     }
   }
-
+  &__form {
+    @include media("small") {
+      display: block;
+    }
+  }
   &__input {
     background-color: $very-light-brand-color;
     height: 70px;
     width: 440px;
     border-radius: 16px;
     padding-left: 10px;
-    @include media("medium") {
-      width: 340px;
+    @include media("small") {
+      width: 80%;
+      height: 50px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
   }
 
@@ -47,9 +57,8 @@
     left: 390px;
     bottom: 70px;
     @include media("small") {
-      height: 54px;
-      left: 120px;
-      bottom: 70px;
+      position: static;
+      transform: none;
     }
   }
 }

@@ -159,6 +159,9 @@
     background: url("/src/public/assets/images/pattern-1.svg") top center
       no-repeat;
     background-size: cover;
+    @include media("small") {
+      display: none;
+    }
   }
 
   &__order {
