@@ -22,9 +22,18 @@
     display: flex;
     flex-shrink: 0;
     @include media("medium") {
-      margin-right: 50px;
+      margin-right: 20px;
     }
     @include media("small") {
+      display: none;
+    }
+  }
+
+  &__form-small {
+    display: none;
+
+    @include media("small") {
+      display: block;
     }
   }
 
@@ -75,6 +84,10 @@
 
     &:checked + .header__burger-icon + .header__menu-list {
       @include media("medium") {
+        display: block;
+        cursor: pointer;
+      }
+      @include media("small") {
         display: block;
         cursor: pointer;
       }
