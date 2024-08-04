@@ -56,6 +56,10 @@
     height: 54px;
     left: 390px;
     bottom: 70px;
+    @include media("medium") {
+      left: 360px;
+      bottom: 105px;
+    }
     @include media("small") {
       position: static;
       transform: none;

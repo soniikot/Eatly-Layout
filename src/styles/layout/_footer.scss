@@ -26,15 +26,18 @@
   }
 
   &__bottom {
-    padding-top: 50px;
+    padding: 25px;
     color: $mid-grey;
     display: flex;
     justify-content: space-between;
   }
 
-  &__bottom-socialmedia {
+  &__bottom-social-media {
     padding-right: 50px;
     display: flex;
     gap: 50px;
+    @include media("small") {
+      gap: 10px;
+    }
   }
 }
