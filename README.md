@@ -12,12 +12,12 @@ This repository contains an online food-delivery service web-site. I used Vite, 
 * Pure CSS Burger menu and Pure CSS slider.
 
 ## Technologies
-1.Vite
-2.SCSS
-3.BEM
-3.HTML
-4.CSS
-5.Perfect Pixes
+* Vite
+* SCSS
+* BEM
+* HTML
+* CSS
+* Perfect Pixes
 
 
 
