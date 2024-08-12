@@ -16,19 +16,18 @@
   &__decor3,
   &__decor4 {
     bottom: 0;
-    right: -200px;
+    right: 0px;
     position: absolute;
   }
 
   &__list {
     position: relative;
     display: flex;
-    gap: 80px;
     color: $white;
     justify-content: space-evenly;
     align-items: center;
-    padding: 55px 0px;
-    margin: 0 100px;
+    padding: 55px 00px;
+    margin: 0 10px;
     @include media("medium") {
       flex-direction: column;
     }
@@ -40,7 +39,9 @@
   }
 
   &__text {
+    padding-inline: 50px;
     border-right: 1px solid $subtitle-grey;
+
     text-align: center;
     @include media("medium") {
       border-bottom: 1px solid $subtitle-grey;
@@ -51,7 +52,7 @@
     }
   }
 
-  &__text:nth-child(3n) {
+  &__text:nth-child(4n) {
     border: none;
   }
 
