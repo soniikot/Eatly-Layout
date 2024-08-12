@@ -52,6 +52,8 @@
   }
 
   &__button {
+    display: flex;
+    align-items: center;
     position: absolute;
     height: 54px;
     left: 390px;

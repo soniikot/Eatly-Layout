@@ -15,7 +15,7 @@
   &__header {
     flex: 0 1 48%;
     padding-left: 130px;
-    margin-top: 40px;
+
     @include media("medium") {
       padding-left: 0px;
     }
@@ -26,7 +26,7 @@
     font-size: 50px;
     font-weight: 800;
     line-height: 1;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     @include media("medium") {
       text-align: center;
       margin-left: 20px;
@@ -40,6 +40,7 @@
 
   &__list {
     list-style: disc;
+    margin-bottom: 40px;
   }
 
   &__list-item {
@@ -68,10 +69,15 @@
 
   &__button {
     position: relative;
-    margin: 40px;
+    margin: 10px 10px 0 0;
     @include media("medium") {
       text-align: center;
     }
+  }
+
+  &__button-image {
+    display: inline-block;
+    vertical-align: middle;
   }
 
   &__button:after {
